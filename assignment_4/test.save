@@ -1,0 +1,4 @@
+#!bin/bash
+echo "enter a file name: "
+read 
+a=locate -b 

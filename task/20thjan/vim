@@ -1,0 +1,5 @@
+mailhub=smtp.gmail.com:587
+useSTARTTLS=YES
+AuthUser=soorajynaik036@gmail.com
+AuthPass=
+TLS_CA_File=/etc/pki/tls/certs/ca-bundle.crt
