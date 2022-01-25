@@ -5,4 +5,4 @@ Principal_Amount=$1
 Interest=$2
 Time=$3
 r= expr $Principal_Amount \* $Interest \* $Time / 100
-echo "Simple interest is $r"
+echo $r
