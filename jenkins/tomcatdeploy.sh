@@ -6,11 +6,8 @@ mvn clean install
 
 sudo scp /root/webapp/webapp/target/webapp.war  ubuntu@52.12.122.206:/home/ubuntu/apache-tomcat-8.5.75/webapps
 
-
-#echo `hostname`
-
-ssh ubuntu@52.12.122.206 << EOF
-#sudo cp -R /home/ubuntu/webapp.war /home/ubuntu/apache-tomcat-8.5.75/webapps;
+ssh ubuntu@54.185.185.197<<EOF
+  #sudo cp -R /home/ubuntu/webapp.war /home/ubuntu/apache-tomcat-8.5.75/webapps;
   cd /home/ubuntu/apache-tomcat-8.5.75/bin
   sh catalina.sh stop
   sh catalina.sh start
