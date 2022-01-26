@@ -4,7 +4,7 @@ basic=$1
 
 dp=`expr $basic \* 50 / 100`
 
-echo "DP amount is: $dp"
+echo "DP amount is:" $dp
 
 a=`expr $basic + $dp`
 
@@ -18,7 +18,7 @@ pf=`expr $a \* 10 / 100`
 
 Salary=`expr $basic + $dp + $da + $hra + $ma - $pf`
 
-echo "Salary is: $Salary"
+echo "Salary is:" $Salary
 
 
 
