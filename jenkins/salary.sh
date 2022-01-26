@@ -2,19 +2,19 @@
 
 basic=$1
 
-dp=`expr $basic \* 50 / 100`
+dp=$(( $basic * 50 / 100 ))
 
-a=`expr $basic + $dp`
+a=$(( $basic + $dp ))
 
-da=`expr $a \* 35 / 100`
+da=$(( $a * 35 / 100 ))
 
-hra=`expr $a \* 8 / 100`
+hra=$(( $a * 8 / 100 ))
 
-ma=`expr $a \* 3 / 100`
+ma=$(( $a * 3 / 100 ))
 
-pf=`expr $a \* 10 / 100`
+pf=$(( $a * 10 / 100 ))
 
-Salary=`expr $basic + $dp + $da + $hra + $ma - $pf`
+Salary=$(( $basic + $dp + $da + $hra + $ma - $pf ))
 
 echo "Salary is: $Salary"
 
