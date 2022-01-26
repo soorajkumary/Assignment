@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 
 basic=$1
 
@@ -19,7 +19,3 @@ pf=`expr $a \* 10 / 100`
 Salary=`expr $basic + $dp + $da + $hra + $ma - $pf`
 
 echo "Salary is:" $Salary
-
-
-
-
