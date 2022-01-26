@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/webapp/webapp
+cd /home/ubuntu/webapp
 
 mvn clean install
 
