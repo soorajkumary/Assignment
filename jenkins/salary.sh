@@ -2,21 +2,21 @@
 
 basic=$1
 
-dp=$(( $basic * 50 / 100 ))
+dp=`expr $basic \* 50 / 100`
 
-echo $dp
+echo "DP amount is: $dp"
 
-a=$(( $basic + $dp ))
+a=`expr $basic + $dp`
 
-da=$(( $a * 35 / 100 ))
+da=`expr $a \* 35 / 100`
 
-hra=$(( $a * 8 / 100 ))
+hra=`expr $a \* 8 / 100`
 
-ma=$(( $a * 3 / 100 ))
+ma=`expr $a \* 3 / 100`
 
-pf=$(( $a * 10 / 100 ))
+pf=`expr $a \* 10 / 100`
 
-Salary=$(( $basic + $dp + $da + $hra + $ma - $pf ))
+Salary=`expr $basic + $dp + $da + $hra + $ma - $pf`
 
 echo "Salary is: $Salary"
 
