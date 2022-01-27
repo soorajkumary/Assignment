@@ -1,5 +1,7 @@
 #/bin/bash
-echo "enter the basic amount: "
+
+echo "Enter the basic amount"
+
 read basic
 
 dp=`expr $basic \* 50 / 100`

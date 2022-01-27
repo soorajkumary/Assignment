@@ -1,10 +1,8 @@
 #!/bin/bash
 
-cd /root/webapp/webapp
-
 mvn clean install
 
-sudo scp /root/webapp/webapp/target/webapp.war  ubuntu@52.12.122.206:/home/ubuntu/apache-tomcat-8.5.75/webapps
+sudo scp /home/ubuntu/apache-tomcat-9.0.58/webapps/webapp.war  ubuntu@52.12.122.206:/home/ubuntu/apache-tomcat-8.5.75/webapps
 
 
 #echo `hostname`
