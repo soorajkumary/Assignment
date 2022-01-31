@@ -13,6 +13,6 @@ e=`echo "Disk utilization: $disk"`
 
 message=`echo "$c $d $e"`
 
-[ ! -z "$message" ] && curl -X POST -H 'Content-type: application/json' --data "{\"text\": \"${message}\"}" https://hooks.slack.com/services/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
+[ ! -z "$message" ] && curl -X POST -H 'Content-type: application/json' --data "{\"text\": \"${message}\"}" https://hooks.slack.com/services/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
 
 
