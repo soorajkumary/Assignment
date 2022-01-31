@@ -12,5 +12,5 @@ d=`echo "Memory utilization: $memory%"`
 e=`echo "Disk utilization: $disk"`
 
 message=`echo "$c $d $e"`
-
+echo "$message"
 
