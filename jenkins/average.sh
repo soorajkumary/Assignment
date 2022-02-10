@@ -8,7 +8,7 @@ sum=0
 echo "Enter Numbers"
 while [ $i -le $N ]
 do
-  read num
+  num=$2
   sum=$((sum + num))
   i=$((i + 1))
 done
