@@ -1,0 +1,17 @@
+# This is shell script from git pipeline
+# Select git in pipeline syntax and give all the details
+# Then select shell in pipeline syntax and give what it takes to run here i gave [ jenkins/calculator.sh $Number1 $add_or_sub $Number2 ] and got the pipeline script [ sh 'jenkins/calculator.sh $Number1 $add_or_sub $Number2' ]
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Soorajnaik/Assignment.git'
+                sh 'jenkins/calculator.sh $Number1 $add_or_sub $Number2'
+                
+            }
+        }
+    }
+}
+
