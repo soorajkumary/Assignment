@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: messaging-pod
+  namespace: sooraj
+  labels:
+    tier: msg
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      tier: msg
+  template:
+    metadata:
+      labels:
+        tier: msg
+    spec:
+      containers:
+      - name: messaging-pod
+        image: redis:7.0-rc1-alpine
+        resources:
+          requests:
+            memory: "100Mi"
+            cpu: "100m"
+          limits:
+            memory: "200Mi"
+            cpu: "200m"

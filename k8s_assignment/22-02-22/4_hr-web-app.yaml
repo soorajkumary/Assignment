@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hr-web-app
+  namespace: sooraj
+  labels:
+    app: hr-webapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hr-webapp
+  template:
+    metadata:
+      labels:
+        app: hr-webapp
+    spec:
+      containers:
+      - name: hr-web-app
+        image: kodekloud/webapp-color
+        resources:
+          requests:
+            memory: "100Mi"
+            cpu: "100m"
+          limits:
+            memory: "200Mi"
+            cpu: "200m"
+        ports:
+        - containerPort: 8080
+

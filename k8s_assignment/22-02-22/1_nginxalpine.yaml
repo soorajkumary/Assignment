@@ -1,0 +1,30 @@
+apiVersion: app/v1
+kind: Deployment
+metadata
+  name: nginx-pod
+  namespace: sooraj
+  labels:
+    app: sooraj-alpine
+spec:
+  replicas: 2
+  selectors:
+    matchLabels:
+      app: sooraj-apline
+  template:
+    metadata:
+      labels:
+        app: sooraj-apline
+    spec:
+      containers:
+      - name: sooraj-alpine
+        image: nginx:alpine
+        resources:
+          requests: "100Mi"
+          cpu: "100m"
+        limits:
+          requests: "200Mi"
+          cpu: "200m"
+        ports:
+        - containerPort: 80
+      nodeSelector:
+        type: webapp

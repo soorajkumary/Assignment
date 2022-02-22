@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: temp-bus
+  namespace: sooraj
+spec:
+  containers:
+  - name: temp-bus
+    image: redis:7.0-rc1-alpine
+    ports:
+    - containerPort: 80
