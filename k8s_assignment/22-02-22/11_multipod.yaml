@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multi-pod
+  namespace: sooraj
+  labels:
+    name: multi-pod
+spec:
+  containers:
+  - name: alpha
+    image: nginx
+    env:
+    - name: alpha
+    ports:
+    - containerPort: 80
+  - name: beta
+    image: busybox
+    env:
+    - name: beta
+    command: ["sleep","4800"]
+    ports:
+    - containerPort: 80
