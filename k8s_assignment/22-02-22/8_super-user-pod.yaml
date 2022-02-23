@@ -9,7 +9,7 @@ spec:
   containers:
   - name: superpod
     image: busybox:1.28
-    command: ["sleep","4800]
+    command: ["sleep","4800"]
     securityContext:
       capabilities:
         add: ["SYS_TIME"]
